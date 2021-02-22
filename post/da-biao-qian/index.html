@@ -1,13 +1,20 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>打标签 | Gridea</title>
-<link rel="shortcut icon" href="https://bangwenhe.github.io/label_distribution//favicon.ico?v=1613978214097">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+    <meta charset="utf-8" >
+
+<title>打标签 | Label Distribution</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://bangwenhe.github.io/label_distribution//favicon.ico?v=1613978696410">
 <link rel="stylesheet" href="https://bangwenhe.github.io/label_distribution//styles/main.css">
-<link rel="alternate" type="application/atom+xml" title="打标签 | Gridea - Atom Feed" href="https://bangwenhe.github.io/label_distribution//atom.xml">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
@@ -18,82 +25,81 @@ labelme
 
 pip install labelme：如果你的电脑..." />
     <meta name="keywords" content="" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://bangwenhe.github.io/label_distribution/">
-  <img class="avatar" src="https://bangwenhe.github.io/label_distribution//images/avatar.png?v=1613978214097" alt="">
-  </a>
-  <h1 class="site-title">
-    Gridea
-  </h1>
-  <p class="site-description">
-    温故而知新
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://bangwenhe.github.io/label_distribution/">
+        <img src="https://bangwenhe.github.io/label_distribution//images/avatar.png?v=1613978696410" class="site-logo">
+        <h1 class="site-title">Label Distribution</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="/" class="menu">
-          首页
-        </a>
+        
+          <a href="/" class="site-nav" target="_blank">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="/archives" class="site-nav" target="_blank">
+            归档
+          </a>
+        
       
-        <a href="/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="/tags" class="site-nav" target="_blank">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="/post/about" class="site-nav" target="_blank">
+            关于
+          </a>
+        
       
-        <a href="/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="/post/about" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
   </div>
-  <div class="social-container">
-    
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
       
-    
+        
+      
+    </div>
+    <div class="site-description">
+      打标签的任务分配
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://bangwenhe.github.io/label_distribution//atom.xml" target="_blank">RSS</a>
+    </div>
   </div>
 </div>
 
-        <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              打标签
-            </h2>
-            <div class="post-info">
-              <span>
-                2021-02-22
-              </span>
-              <span>
-                3 min read
-              </span>
-              
-            </div>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">打标签</h2>
+            <div class="post-date">2021-02-22</div>
             
-            <div class="post-content-wrapper">
-              <div class="post-content">
-                <h2 id="简介">简介</h2>
+            <div class="post-content" v-pre>
+              <h2 id="简介">简介</h2>
 <p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。</p>
 <h2 id="工具">工具</h2>
 <p>labelme</p>
@@ -124,80 +130,36 @@ pip install labelme：如果你的电脑..." />
 调整好桌角，然后重新送入分类模型。<br>
 分类的作弊和不作弊是不带关键点的，不是我们最开始的分类的数据了。所以要用训练骨架模型的数据可视化成分类的数据。</p>
 
-              </div>
-              <div class="toc-container">
-                <ul class="markdownIt-TOC">
-<li>
-<ul>
-<li><a href="#%E7%AE%80%E4%BB%8B">简介</a></li>
-<li><a href="#%E5%B7%A5%E5%85%B7">工具</a></li>
-<li><a href="#%E6%A0%87%E6%B3%A8%E6%96%B9%E6%B3%95">标注方法</a></li>
-<li><a href="#%E6%A0%87%E6%B3%A8%E8%A7%84%E5%88%99">标注规则</a></li>
-<li><a href="#%E6%95%B0%E6%8D%AE%E7%9A%84%E6%8F%90%E4%BE%9B%E4%BB%A5%E5%8F%8A%E6%94%B6%E5%9B%9E">数据的提供以及收回</a></li>
-<li><a href="#%E6%8A%A5%E9%85%AC">报酬</a></li>
-<li><a href="#%E5%85%B6%E4%BB%96">其他</a></li>
-</ul>
-</li>
-</ul>
-
-              </div>
             </div>
-          </article>
+            
+            
+
+            
+
+          </div>
+
         </div>
-
-        
-
-        
-
-        <div class="site-footer">
-  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
-  <a class="rss" href="https://bangwenhe.github.io/label_distribution//atom.xml" target="_blank">
-    <i class="ri-rss-line"></i> RSS
-  </a>
-</div>
-
       </div>
     </div>
 
-    <script>
-      hljs.initHighlightingOnLoad()
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
 
-      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+AOS.init();
 
-      // This should probably be throttled.
-      // Especially because it triggers during smooth scrolling.
-      // https://lodash.com/docs/4.17.10#throttle
-      // You could do like...
-      // window.addEventListener("scroll", () => {
-      //    _.throttle(doThatStuff, 100);
-      // });
-      // Only not doing it here to keep this Pen dependency-free.
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
-      window.addEventListener("scroll", event => {
-        let fromTop = window.scrollY;
+</script>
 
-        mainNavLinks.forEach((link, index) => {
-          let section = document.getElementById(decodeURI(link.hash).substring(1));
-          let nextSection = null
-          if (mainNavLinks[index + 1]) {
-            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
-          }
-          if (section.offsetTop <= fromTop) {
-            if (nextSection) {
-              if (nextSection.offsetTop > fromTop) {
-                link.classList.add("current");
-              } else {
-                link.classList.remove("current");    
-              }
-            } else {
-              link.classList.add("current");
-            }
-          } else {
-            link.classList.remove("current");
-          }
-        });
-      });
 
-    </script>
+
+
+
+
   </body>
 </html>
