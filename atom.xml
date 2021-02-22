@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://bangwenhe.github.io/label_distribution/</id>
     <title>Label Distribution</title>
-    <updated>2021-02-22T07:44:55.611Z</updated>
+    <updated>2021-02-22T08:02:32.594Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://bangwenhe.github.io/label_distribution/"/>
     <link rel="self" href="https://bangwenhe.github.io/label_distribution/atom.xml"/>
@@ -17,10 +17,12 @@
         </link>
         <updated>2021-02-22T07:13:34.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="简介">简介</h2>
-<p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。</p>
+<p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>o</mi><mi>s</mi><mi>s</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msup><mi>y</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>−</mo><msub><mi>h</mi><mi>θ</mi></msub><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>)</mo><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Loss = \sum_{i=1}^n (y^{(i)} - h_\theta (x^{(i)}))^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.18771em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathdefault mtight">i</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathdefault mtight">i</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></p>
 ]]></summary>
         <content type="html"><![CDATA[<h2 id="简介">简介</h2>
-<p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。</p>
+<p>CV里的打标签方法有很多，这次我们打标签的是2D keypoints（2D关键点），就是把人体骨骼的关键点用一个坐标<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>x</mi><mo separator="true">,</mo><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(x,y)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span>表示出来。<br>
+<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>o</mi><mi>s</mi><mi>s</mi><mo>=</mo><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msup><mi>y</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>−</mo><msub><mi>h</mi><mi>θ</mi></msub><mo>(</mo><msup><mi>x</mi><mrow><mo>(</mo><mi>i</mi><mo>)</mo></mrow></msup><mo>)</mo><msup><mo>)</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">Loss = \sum_{i=1}^n (y^{(i)} - h_\theta (x^{(i)}))^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">o</span><span class="mord mathdefault">s</span><span class="mord mathdefault">s</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.18771em;vertical-align:-0.29971000000000003em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathdefault mtight">i</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.138em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">h</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mathdefault mtight">i</span><span class="mclose mtight">)</span></span></span></span></span></span></span></span></span><span class="mclose">)</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></p>
 <!-- more -->
 <h2 id="工具">工具</h2>
 <p>labelme</p>
@@ -31,27 +33,100 @@
 <h2 id="标注方法">标注方法</h2>
 <p>下面是labelme的运行界面，<br>
 <img src="https://bangwenhe.github.io/label_distribution//post-images/1613979116939.png" alt="" loading="lazy"><br>
-在本次的任务中，一共有17个点需要标注，如表格所示，<br>
-|标签名|中文名|</p>
-<p>我们要做的就是调整这些点，使其点的label（标签）符合关键点的位置。</p>
+在本次的任务中，一共有17个点需要标注，如表格所示，</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">标签名</th>
+<th style="text-align:center">中文名</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">nose</td>
+<td style="text-align:center">鼻子</td>
+</tr>
+<tr>
+<td style="text-align:center">left_eye</td>
+<td style="text-align:center">左眼</td>
+</tr>
+<tr>
+<td style="text-align:center">right_eye</td>
+<td style="text-align:center">右眼</td>
+</tr>
+<tr>
+<td style="text-align:center">left_ear</td>
+<td style="text-align:center">左耳</td>
+</tr>
+<tr>
+<td style="text-align:center">right_ear</td>
+<td style="text-align:center">右耳</td>
+</tr>
+<tr>
+<td style="text-align:center">left_shoulder</td>
+<td style="text-align:center">左肩</td>
+</tr>
+<tr>
+<td style="text-align:center">right_shoulder</td>
+<td style="text-align:center">右肩</td>
+</tr>
+<tr>
+<td style="text-align:center">left_elbow</td>
+<td style="text-align:center">左手肘</td>
+</tr>
+<tr>
+<td style="text-align:center">right_elbow</td>
+<td style="text-align:center">右手肘</td>
+</tr>
+<tr>
+<td style="text-align:center">left_wrist</td>
+<td style="text-align:center">左手腕</td>
+</tr>
+<tr>
+<td style="text-align:center">right_wrist</td>
+<td style="text-align:center">右手腕</td>
+</tr>
+<tr>
+<td style="text-align:center">left_hip</td>
+<td style="text-align:center">左胯部/臀部</td>
+</tr>
+<tr>
+<td style="text-align:center">right_hip</td>
+<td style="text-align:center">右胯部/臀部</td>
+</tr>
+<tr>
+<td style="text-align:center">lb</td>
+<td style="text-align:center">桌子左下角（left bottom）</td>
+</tr>
+<tr>
+<td style="text-align:center">rb</td>
+<td style="text-align:center">桌子右下角（right bottom）</td>
+</tr>
+<tr>
+<td style="text-align:center">lt</td>
+<td style="text-align:center">桌子左上角（left top）</td>
+</tr>
+<tr>
+<td style="text-align:center">rt</td>
+<td style="text-align:center">桌子右上角（right top）</td>
+</tr>
+</tbody>
+</table>
+<p>我们要做的就是调整这些点，使其点的label（标签）符合关键点的位置。需要注意的是，这里的<strong>左右是相对于考生而言的</strong>，而不是坐在屏幕前打标签的同学们而言的，所以在调整标签时务必区分好左右。</p>
 <p>更具体的我会录制一个视频，并提供一些标签给你们尝试。</p>
 <h2 id="标注规则">标注规则</h2>
 <p>置信度高的数据，只要不会影响最后的结果，可以不用调整。其他的偏差比较大的需要仔细调整一下。</p>
 <p>对骨架乱的数据，需要保留下原始数据后，再打标签。就像这张图，它的桌子其实比较准确，但是骨架点完全乱了，就需要保留下原始数据，当然，这张里面都没有人体骨架，也就不需要标注了。<br>
 <img src="https://bangwenhe.github.io/label_distribution//post-images/1613979382543.png" alt="" loading="lazy"></p>
 <h2 id="数据的提供以及收回">数据的提供以及收回</h2>
-<p>每次开始打标签将会提供一次数据，数据会由人发放到各位打标签的同学们手中。<br>
-每次打标签持续的时间是5天左右，打好标签的数据需要由你们再次发回给发放数据的同学。<br>
-在打完标签之后，旧的数据就不需要继续打标签了，而是等到新的数据发放下来，再继续打标签。</p>
+<p>每次开始打标签将会提供一次数据，数据会由人发放到各位打标签的同学们手中。</p>
+<p>每次打标签持续的时间是5天左右，打好标签的数据需要由你们再次发回给发放数据的同学。</p>
+<p>在打完标签之后，旧的数据就不需要继续打标签了，而是等到新的数据发放下来，再继续打标签。</p>
 <h2 id="报酬">报酬</h2>
 <p>如果按照要求打完了所有标签，那么会按照0.2￥/张计算，如果没有打完，会按照0.1￥/张计算。<br>
 统计标签数量每周会进行一次。</p>
 <h2 id="其他">其他</h2>
 <p>在不同的时间段，打标签的具体规则会产生变化，每次的具体规则会包含在发放给各位打标签的同学们的数据压缩包里。</p>
-<p><strong>按照考场来分配训练集和验证集，先打验证集，然后打训练集。</strong><br>
-600张船山的数据，模型对于“回”字形上的数据。<br>
-调整好桌角，然后重新送入分类模型。<br>
-分类的作弊和不作弊是不带关键点的，不是我们最开始的分类的数据了。所以要用训练骨架模型的数据可视化成分类的数据。</p>
 ]]></content>
     </entry>
 </feed>
